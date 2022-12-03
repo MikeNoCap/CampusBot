@@ -1,0 +1,27 @@
+{
+    "name": "Campus hacker bot maskin 3000 69 Neutron Lake Edition",
+    "version": "1.0.0",
+    "description": "Löser campus oppgaver letttt.",
+    "manifest_version": 3,
+    "author": "Miguel Banan",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "AAA"
+    },
+    "permissions": [
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "*://*/"
+    ],
+    "background": { "service_worker": "background.js" },
+    "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": [
+            "*://campus.inkrement.no/*"
+          ]
+        }
+      ]
+    
+}
